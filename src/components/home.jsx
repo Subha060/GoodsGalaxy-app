@@ -3,7 +3,7 @@ import React from "react";
 import { FooterNav } from "./footerNav.jsx";
 import NavBar from "./NavBar.jsx";
 import CardView from "./HeroCardView.jsx";
-import Card from "./card.jsx";
+import Card from "./Card.jsx";
 import Categories from "../assets/Categories.js"
 
 export default function Home() {
