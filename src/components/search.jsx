@@ -16,8 +16,8 @@ export function SearchBox() {
     close(!search);
   };
 
-  const searchBtn = "src/images/search.svg";
-  const closeBtn = "src/images/close.svg";
+  const searchBtn = "images/search.svg";
+  const closeBtn = "images/close.svg";
 
   return (
     <div className="">
