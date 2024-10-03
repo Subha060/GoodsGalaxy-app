@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+   display: none;
+  }
+}
+
+.menu {
+  box-shadow: 0px 0px 20px 2px #AEB1C1,
+    inset 100px 0px 100px 1px #AEB1C1;
+  backdrop-filter: blur(20px);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translateX(-100%);
+  opacity: 0;
+  position: fixed;
+  /* Use fixed to prevent layout issues during transition */
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 66.67%;
+  /* 2/3 width */
+  background-color: rgba(255, 255, 255, 0.43);
+  /* Equivalent of #ffffff6e */
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+.blur-cutom {
+  opacity: 0;
+  background-color: transparent;
+  backdrop-filter: blur(3px);
+  transition: all 0.5s ease 0.1s;
+}
+
+.blur-cutom.show {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+
+.menu.open {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.shadow-custom {
+  box-shadow: 0px 0px 100px 1px rgba(127, 127, 127, 0.452),
+    inset 0px 3px 10px 5px rgb(223, 223, 223);
+}
+
+.transition-text {
+  font-size: 0px;
+  transition: all 0.2s;
+  opacity: 0;
+}
+
+.transition-text.show {
+  font-size: 16px;
+  opacity: 1;
+}
+
+.SearchInput {
+  width: 0;
+  height: 40px;
+  overflow: hidden;
+  position: fixed;
+  top: 12%;
+  left: 55%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  box-shadow: 0px 0px 20px 5px rgba(183, 183, 183, 0.412);
+  /* border: 1px solid rgba(161, 161, 161, 0.486); */
+  transition: all 0.3s;
+}
+
+.SearchInput.show {
+
+  width: 80%;
+  opacity: 1;
+
+}
+
+.SearchInput > input {
+  /* box-shadow: inset 0px 0px 10px 0.2px rgba(186, 186, 186, 0.444); */
+  border: none;
+}
+
+
+.custom-background {
+  background: linear-gradient(180deg, transparent 30%, #00a9e158);
+}
