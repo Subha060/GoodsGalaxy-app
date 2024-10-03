@@ -17,7 +17,7 @@ export const FooterNav = (params) => {
             className="flex gap-3 items-center"
             onClick={() => toggle("home")}
           >
-            <img src="images/home.svg" alt="" />
+            <img src="./home.svg" alt="" />
             <h1
               className={`transition-text ${
                 selectedItem === "home" ? "show" : ""
@@ -34,7 +34,7 @@ export const FooterNav = (params) => {
             className="flex gap-3 items-center"
             onClick={() => toggle("account")}
           >
-            <img src="images/user.svg" alt="" />
+            <img src="./user.svg" alt="" />
             <h1
               className={`transition-text ${
                 selectedItem === "account" ? "show" : ""
@@ -50,7 +50,7 @@ export const FooterNav = (params) => {
             className="flex gap-3 items-center"
             onClick={() => toggle("shop")}
           >
-            <img src="images/shop.svg" alt="" />
+            <img src="./shop.svg" alt="" />
             <h1
               className={`transition-text ${
                 selectedItem === "shop" ? "show" : ""
@@ -66,7 +66,7 @@ export const FooterNav = (params) => {
             className="flex gap-3 items-center"
             onClick={() => toggle("wishlist")}
           >
-            <img src="images/heart.svg" alt="" />
+            <img src="./heart.svg" alt="" />
             <h1
               className={`transition-text ${
                 selectedItem === "wishlist" ? "show" : ""

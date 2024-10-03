@@ -1,18 +1,18 @@
 const Categories = [
     {
-        image: "images/mobile.png",
+        image: "./mobile.png",
         text: "Mobile Phones & Accessories",
     },
     {
-        image: "images/gaming.png",
+        image: "./gaming.png",
         text: "Essential For Gaming",
     },
     {
-        image: "images/accessories.png",
+        image: "./accessories.png",
         text: "Shop Computer & Accessories",
     },
     {
-        image: "images/Home.png",
+        image: "./Home.png",
         text: "Home & Kitchen appliances",
     },
 ]

@@ -21,7 +21,7 @@ const NavBar = () => {
     <>
       <div className="flex justify-between items-center overflow-hidden">
         <div className="flex gap-2 justify-center items-center">
-          <img src="images/profile.svg" alt="" className="h-12 w-12" />
+          <img src="./profile.svg" alt="" className="h-12 w-12" />
           <div className="text-left text-sm">
             <h3 className="font-bold text-lg">Hello Mika!</h3>
             <h3 className="text-[#AEB1C1]">Good Morning!</h3>
@@ -31,7 +31,7 @@ const NavBar = () => {
         <div className="flex gap-5">
           <SearchBox />
           <img
-            src="images/menuButton.svg"
+            src="./menuButton.svg"
             alt=""
             className="w-5 h-5 cursor-pointer"
             onClick={toggleMenu}
@@ -62,7 +62,7 @@ const Menu = ({ toggleMenu, isMenuOpen }) => {
         } px-10 py-10 z-30 overflow-hidden`}
       >
         <img
-          src="images/back.svg"
+          src="./back.svg"
           alt=""
           className="w-6 absolute right-5 top-5 rotate-180"
           onClick={toggleMenu}
@@ -70,7 +70,7 @@ const Menu = ({ toggleMenu, isMenuOpen }) => {
 
         <div className="mx-auto">
           <div className="flex flex-wrap flex-col gap-2 justify-center items-center">
-            <img src="images/profile.svg" alt="" className="h-24 w-24" />
+            <img src="./profile.svg" alt="" className="h-24 w-24" />
             <div className="text-center">
               <h3 className="font-bold text-lg">Mika Viano</h3>
               <h3 className="text-[#00A8E1] cursor-pointer">Edit Profile</h3>
@@ -85,7 +85,7 @@ const Menu = ({ toggleMenu, isMenuOpen }) => {
             <li>Settings</li>
           </ul>
           <div className="flex gap-3 py-6">
-            <img src="images/logout.svg" alt="" />
+            <img src="./logout.svg" alt="" />
             <h1 className="font-semibold cursor-pointer">Logout</h1>
           </div>
         </div>
