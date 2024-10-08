@@ -63,4 +63,7 @@ We welcome contributions to the GoodsGalaxy App! To contribute, please follow th
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the MIT License. See the [LICENSE][licenseLink] file for more details.
+
+
+[licenseLink]: LICENSE
