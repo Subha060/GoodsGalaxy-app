@@ -16,13 +16,12 @@ export default function Home() {
     <div className='flex gap-4 overflow-x-scroll' >
     
     {
-      Categories.map((Categorie) => {
-        return <Card width = "260px" height = "140px" image = {`${Categorie.image}`} text = {`${Categorie.text}`} />
+      Categories.map((Categorie, index) => {
+        return <Card key={index} width = "260px" height = "140px" image = {`${Categorie.image}`} text = {`${Categorie.text}`} />
       })
     }
 
     </div>
-      <FooterNav />
     </div>
   );
 }

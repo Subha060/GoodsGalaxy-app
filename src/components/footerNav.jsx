@@ -1,80 +1,82 @@
 import React, { useState } from "react";
 import "../App.css";
+import { NavLink,useLocation } from "react-router-dom";
 
 export const FooterNav = (params) => {
-  const [selectedItem, setSelectedItem] = useState('home');
+  const [selectedItem, setSelectedItem] = useState('/');
 
-  const toggle = (item) => {
-    setSelectedItem(item);
+  const location = useLocation();
+
+  const activeFooter = () => {
+    if (location.pathname === "/" || location.pathname === "/account" || location.pathname === "/shop" || location.pathname === "/favourite") {
+      const locationPath = location.pathname;
+      setSelectedItem(locationPath)
+    }
   };
+  React.useEffect(() => {
+    activeFooter();
+  }, [location]);
+
 
   return (
     <div className="h-20 w-screen fixed bottom-0 left-0 rounded-t-3xl bg-white shadow-custom flex pt-2 items-center z-10">
       <ul className="flex justify-evenly items-end w-full">
         <li>
-          <a
-            href="#"
+          <NavLink to={"/"}
             className="flex gap-3 items-center"
-            onClick={() => toggle("home")}
           >
             <img src="./home.svg" alt="" />
             <h1
               className={`transition-text ${
-                selectedItem === "home" ? "show" : ""
+                selectedItem === "/" ? "show" : ""
               }`}
             >
               Home
             </h1>
-          </a>
+          </NavLink>
         </li>
 
         <li>
-          <a
-            href="#"
+          <NavLink to={"/account"}
             className="flex gap-3 items-center"
-            onClick={() => toggle("account")}
           >
             <img src="./user.svg" alt="" />
             <h1
               className={`transition-text ${
-                selectedItem === "account" ? "show" : ""
+                selectedItem === "/account" ? "show" : ""
               }`}
             >
               Account
             </h1>
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a
-            href="#"
+          <NavLink to={"/shop"}
             className="flex gap-3 items-center"
-            onClick={() => toggle("shop")}
           >
             <img src="./shop.svg" alt="" />
             <h1
               className={`transition-text ${
-                selectedItem === "shop" ? "show" : ""
+                selectedItem === "/shop" ? "show" : ""
               }`}
             >
               Shop
             </h1>
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a
-            href="#"
+          <NavLink to={"/favourite"}
             className="flex gap-3 items-center"
-            onClick={() => toggle("wishlist")}
           >
             <img src="./heart.svg" alt="" />
             <h1
               className={`transition-text ${
-                selectedItem === "wishlist" ? "show" : ""
+                selectedItem === "/favourite" ? "show" : ""
               }`}
             >
-              Wishlist
+              Favourite
             </h1>
-          </a>
+          </NavLink>
         </li>
       </ul>
     </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import menuIcon from '../assets/menuIcons.js'
+import { NavLink } from 'react-router-dom'
 
 export default function NavList() {
     return(
@@ -9,7 +10,7 @@ export default function NavList() {
 
             {
                 menuIcon.map((icon) => (
-                    <a href={icon.link} key={icon.name} className='w-full pr-10 h-10' >
+                    <NavLink to={icon.link} key={icon.name} className='w-full pr-10 h-10' >
                         <li className='flex'>
                             <img src={icon.image} alt="" className='pr-6' />
                             <div className='w-full flex justify-between'>
@@ -23,7 +24,7 @@ export default function NavList() {
                                </h1>
                             </div>
                             </li>
-                    </a>
+                    </NavLink>
                 ))
 
             }

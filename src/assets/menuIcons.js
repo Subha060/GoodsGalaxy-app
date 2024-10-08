@@ -2,27 +2,27 @@ const menuIcon = [
     {
         image: './heart.svg',
         name: 'Favourite',
-        link: '#'
+        link: '/favourite'
     },
     {
         image: './list.svg',
         name: 'List',
-        link: '#'
+        link: '/'
     },
     {
         image: './user.svg',
         name: 'Account',
-        link: '#'
+        link: '/account'
     },
     {
         image: './shop.svg',
         name: 'Buy Again',
-        link: '#'
+        link: '/'
     },
     {
         image: './shop.svg',
         name: 'My Order',
-        link: '#'
+        link: '/'
     },
 ];
 

@@ -1,15 +1,18 @@
 import "./App.css";
 import { FooterNav } from "./components/footerNav.jsx";
 import Home from "./components/home.jsx";
-// import { Search } from './components/search.jsx'
+import Account from "./pages/Account.jsx";
+import Shop from "./pages/Shop.jsx";
+import Cart from "./pages/Favourite.jsx";
+import { Outlet } from "react-router-dom";
+
+
 
 function App() {
   return (
     <div className="w-screen h-screen">
-      <Home />
+      <Outlet />
       <FooterNav />
-
-      {/* <Search /> */}
     </div>
   );
 }
