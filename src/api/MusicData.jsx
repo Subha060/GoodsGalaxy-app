@@ -1,6 +1,6 @@
-export const getMusic = async() => {
+export const getMusic = async(search) => {
 
-    const url = 'https://deezerdevs-deezer.p.rapidapi.com/infos';
+    const url = `https://deezerdevs-deezer.p.rapidapi.com/search?q=${search}`;
     const options = {
 	method: 'GET',
 	headers: {
@@ -11,8 +11,9 @@ export const getMusic = async() => {
 
 try {
 	const response = await fetch(url, options);
-	const result = await response.text();
-    return result;
+	const result = await response.json();
+	// console.log(result.data)
+    return result.data;
 } catch (error) {
 	console.error(error);
 }

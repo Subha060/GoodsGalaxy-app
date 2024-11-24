@@ -1,5 +1,4 @@
-import autoprefixer from "autoprefixer";
-import "../App.css";
+import "/src/App.css";
 import { useState } from "react";
 
 export function SearchBox() {
@@ -7,7 +6,6 @@ export function SearchBox() {
 
   const toggleShow = () => {
     setIsShow(!isShow);
-    console.log(isShow);
   };
 
   const [search, close] = useState(false);

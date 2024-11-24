@@ -4,7 +4,7 @@ import App from './App.jsx'
 import './index.css';
 import Home from "./components/home.jsx";
 import Account from "./pages/Account.jsx";
-import Shop from "./pages/Shop.jsx";
+import Library from "./pages/Library.jsx";
 import Favourite from "./pages/Favourite.jsx";
 import {
   createBrowserRouter,
@@ -31,8 +31,8 @@ const router = createBrowserRouter([
         element: <Account />,
       },
       {
-        path: "/shop",
-        element: <Shop />,
+        path: "/library",
+        element: <Library />,
       },
       {
         path: "/favourite",

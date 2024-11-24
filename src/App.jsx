@@ -2,7 +2,7 @@ import "./App.css";
 import { FooterNav } from "./components/footerNav.jsx";
 import Home from "./components/home.jsx";
 import Account from "./pages/Account.jsx";
-import Shop from "./pages/Shop.jsx";
+import Shop from "./pages/Library.jsx";
 import Cart from "./pages/Favourite.jsx";
 import { Outlet } from "react-router-dom";
 

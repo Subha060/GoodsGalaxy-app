@@ -16,7 +16,7 @@ To get started with the GoodsGalaxy App, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/GoodsGalaxy-app.git
+    git clone https://github.com/Subha060/GoodsGalaxy-app.git
     ```
 2. Navigate to the project directory:
     ```bash

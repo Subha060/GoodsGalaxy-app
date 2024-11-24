@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../App.css";
+import "/src/App.css";
 import { NavLink,useLocation } from "react-router-dom";
 
 export const FooterNav = (params) => {
@@ -8,7 +8,7 @@ export const FooterNav = (params) => {
   const location = useLocation();
 
   const activeFooter = () => {
-    if (location.pathname === "/" || location.pathname === "/account" || location.pathname === "/shop" || location.pathname === "/favourite") {
+    if (location.pathname === "/" || location.pathname === "/account" || location.pathname === "/library" || location.pathname === "/favourite") {
       const locationPath = location.pathname;
       setSelectedItem(locationPath)
     }
@@ -51,16 +51,16 @@ export const FooterNav = (params) => {
           </NavLink>
         </li>
         <li>
-          <NavLink to={"/shop"}
+          <NavLink to={"/library"}
             className="flex gap-3 items-center"
           >
-            <img src="./shop.svg" alt="" />
+            <img src="./library.svg" alt="" />
             <h1
               className={`transition-text ${
-                selectedItem === "/shop" ? "show" : ""
+                selectedItem === "/library" ? "show" : ""
               }`}
             >
-              Shop
+              library
             </h1>
           </NavLink>
         </li>

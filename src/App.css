@@ -109,3 +109,20 @@
 .custom-background {
   background: linear-gradient(180deg, transparent 30%, #00a9e158);
 }
+
+.scroll-snap {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.scroll-snap-child {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  scroll-behavior: smooth;
+}
+
+.grid-custom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}

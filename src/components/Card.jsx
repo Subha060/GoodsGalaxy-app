@@ -3,7 +3,7 @@ import React from 'react'
 export default function Card(props) {
   return (
   
-    <div>
+    <div className='scroll-snap-child'>
 
 <div className={`my-8 rounded-xl overflow-hidden relative object-cover flex`} style={{ height: props.height, width: props.width }}>
 

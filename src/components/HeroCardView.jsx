@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function CardView(props) {
   return (
-    <div>
+    <div className='scroll-snap-child'>
 
         
 <div className={`my-8 rounded-xl overflow-hidden relative bg-cover`} style={{ height: props.height, width: props.width }}>
