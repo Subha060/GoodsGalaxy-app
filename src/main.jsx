@@ -10,7 +10,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import ErrorPage from './assets/ErrorPage.jsx';
+import ErrorPage from './components/ErrorPage.jsx';
 
 
 
