@@ -126,3 +126,11 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
+
+.custom-hover:hover {
+  color: black;
+}
+
+.transition-scale {
+  transition: height 0.3s;
+}

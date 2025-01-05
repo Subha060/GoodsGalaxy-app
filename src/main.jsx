@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css';
-import Home from "./components/home.jsx";
+import Home from "./pages/home.jsx";
 import Account from "./pages/Account.jsx";
 import Library from "./pages/Library.jsx";
 import Favourite from "./pages/Favourite.jsx";
