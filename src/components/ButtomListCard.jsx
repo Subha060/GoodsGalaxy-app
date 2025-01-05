@@ -9,7 +9,7 @@ export default function ButtomLIstCard() {
     }
     
   return (
-    <div className={`transition-scale flex py-1 pr-2 ${extend === true ? "h-full w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex-col px-1.5 gap-2 backdrop-blur-xl" : "item-center gap-7 border-b-2 border-black rounded-xl mb-1 w-[96%] h-28 " }`}
+    <div className={`w-full transition-scale flex py-1 pr-2 ${extend === true ? "h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex-col px-1.5 gap-2 backdrop-blur-xl" : "item-center justify-start gap-7 border-y border-black mb-1 h-24" }`}
     onClick={setMode}>
       <img src="./amazon_logo.svg" alt="" className={`h-20 ${extend === true ? "h-96 w-full bg-red-100 " : ""}`} />
       <div className={` ${extend === true ? "px-3" : ""}`}>

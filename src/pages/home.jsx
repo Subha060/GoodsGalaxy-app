@@ -47,8 +47,10 @@ export default function Home () {
         })
       }
     </ul>
-    <div className={` flex flex-col items-center py-2 w-full h-[450px] mt-5 rounded-2xl overflow-hidden ${checkButtomHeaders(show)}`}>
+    <div className={` flex flex-col items-center pt-2 pb-0 w-full mt-5 rounded-2xl overflow-hidden mb-20 ${checkButtomHeaders(show)}`}>
       {/* {checkButtomHeaders(show)} */}
+      <ButtomLIstCard />
+      <ButtomLIstCard />
       <ButtomLIstCard />
       <ButtomLIstCard />
       <ButtomLIstCard />
